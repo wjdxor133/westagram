@@ -14,21 +14,30 @@
   <body>
     <div id="page">
       <!-- header -->
-      <header>
+      <nav>
         <div class="header-box">
-          <div class="div1">
+          <div class="logo-option">
             <div class="header-logo">
               <img src="img/logo.png" alt="logo" class="logo-img" />
               <img src="img/logo_text.png" alt="logo-text" class="logo-text" />
             </div>
           </div>
-          <div class="div2">
+          <div class="logo-option">
             <div class="header-search">
               <i class="fa fa-search" aria-hidden="true"></i>
               <span>검색</span>
             </div>
+            <div class="header-searchNone">
+              <div class="searchNone-firstItem">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="검색" />
+              </div>
+              <div class="searchNone-endItem">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
-          <div class="div3">
+          <div class="logo-option">
             <div class="header-item">
               <img src="img/explore.png" alt="explore" />
               <img src="img/heart.png" alt="heart" />
@@ -36,7 +45,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </nav>
       <!-- //header -->
       <main>
         <!-- main-left -->
@@ -54,6 +63,7 @@
               </div>
             </div>
             <div class="feed-picture"></div>
+            <!-- 부모에게 미리 크기를 지정하면 자식의 크기가 더 커지면 px 깨짐 주의-->
             <div class="feed-icons">
               <div class="feedIcon-left">
                 <img src="img/heart.png" alt="하트" />
@@ -64,10 +74,33 @@
                 <img src="img/bookmark.png" alt="북마크" />
               </div>
             </div>
-            <div class="like">
-              <span><b>b__ellho</b>님 <b>여러 명</b>이 좋아합니다</span>
+            <div class="feed-bottom">
+              <div class="like-text">
+                <span><a>lahmjun_94</a>님 <b>여러 명</b>이 좋아합니다</span>
+              </div>
+
+              <div class="userInfo">
+                <span><a id="userId">ljtaek2</a></span>
+                <span>제주도 여행 언제가지?</span>
+                <span>더 보기</span>
+              </div>
+
+              <div class="chat-list"></div>
+
+              <div class="feed-time">
+                <span>1시간 전</span>
+              </div>
             </div>
-            <div class="feed-footer"></div>
+            <div class="chat-write">
+              <div class="chatting">
+                <input
+                  type="text"
+                  placeholder="댓글 달기..."
+                  class="chatText"
+                />
+                <button type="button" class="chatBtn">게시</button>
+              </div>
+            </div>
           </div>
         </div>
         <!-- //main-left -->
@@ -92,6 +125,7 @@
             <div class="story-items">
               <!-- 스토리 항목 1-->
               <div class="story-item1">
+                <!-- div안에 img를 넣고 부모 div한테 flex를 이용해 가운데 정렬하면 깔끔-->
                 <img
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
                   alt="스토리 항목1"
@@ -200,13 +234,18 @@
                 <li><a href="#">홍보 센터</a></li>
                 <li><a href="#">API</a></li>
                 <li><a href="#">채용 정보</a></li>
+                <br />
                 <li><a href="#">개인정보처리방침</a></li>
                 <li><a href="#">약관</a></li>
                 <li><a href="#">위치</a></li>
                 <li><a href="#">인기 계정</a></li>
                 <li><a href="#">해시태그</a></li>
+                <br />
                 <li><a href="#">언어</a></li>
               </ul>
+            </div>
+            <div class="footer-text">
+              <span>© 2020 INSTAGRAM FROM FACEBOOK</span>
             </div>
           </footer>
         </div>
