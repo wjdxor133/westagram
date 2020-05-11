@@ -12,246 +12,240 @@
     <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="page">
-      <!-- header -->
-      <nav>
-        <div class="header-box">
-          <div class="logo-option">
-            <div class="header-logo">
-              <img src="img/logo.png" alt="logo" class="logo-img" />
-              <img src="img/logo_text.png" alt="logo-text" class="logo-text" />
-            </div>
+    <!-- header -->
+    <nav>
+      <div class="header-box">
+        <div class="logo-option">
+          <div class="header-logo">
+            <img src="img/logo.png" alt="logo" class="logo-img" />
+            <img src="img/logo_text.png" alt="logo-text" class="logo-text" />
           </div>
-          <div class="logo-option">
-            <div class="header-search">
+        </div>
+        <div class="logo-option">
+          <div class="header-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span>검색</span>
+          </div>
+          <div class="header-searchNone">
+            <div class="searchNone-firstItem">
               <i class="fa fa-search" aria-hidden="true"></i>
-              <span>검색</span>
+              <input type="text" placeholder="검색" />
             </div>
-            <div class="header-searchNone">
-              <div class="searchNone-firstItem">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input type="text" placeholder="검색" />
-              </div>
-              <div class="searchNone-endItem">
-                <i class="fa fa-times-circle" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <div class="logo-option">
-            <div class="header-item">
-              <img src="img/explore.png" alt="explore" />
-              <img src="img/heart.png" alt="heart" />
-              <img src="img/profile.png" alt="profile" />
+            <div class="searchNone-endItem">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- //header -->
-      <main>
-        <!-- main-left -->
-        <div class="main-left">
-          <div class="feed">
-            <div class="feed-header">
-              <div class="feed-header-item">
-                <img
-                  class="feed-header-img1"
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/25007874_506309469752451_193908878537129984_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7rxRlThP888AX_zNjnD&oh=0f775fe01c91784c896f46107c5ff3f6&oe=5ED16CF6"
-                  alt="사용자"
-                />
-                <span><b>ljtaek2</b></span>
-                <img class="feed-header-img2" src="img/more.png" alt="" />
+        <div class="logo-option">
+          <div class="header-item">
+            <img src="img/explore.png" alt="explore" />
+            <img src="img/heart.png" alt="heart" />
+            <img src="img/profile.png" alt="profile" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- //header -->
+    <main>
+      <!-- main-left -->
+      <div class="main-left">
+        <div class="feed">
+          <div class="feed-header">
+            <div class="feed-header-item">
+              <img
+                class="feed-header-img1"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/25007874_506309469752451_193908878537129984_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7rxRlThP888AX_zNjnD&oh=0f775fe01c91784c896f46107c5ff3f6&oe=5ED16CF6"
+                alt="사용자"
+              />
+              <span><b>ljtaek2</b></span>
+              <img class="feed-header-img2" src="img/more.png" alt="" />
+            </div>
+          </div>
+          <div class="feed-picture"></div>
+          <!-- 부모에게 미리 크기를 지정하면 자식의 크기가 더 커지면 px 깨짐 주의-->
+          <div class="feed-icons">
+            <div class="feedIcon-left">
+              <img src="img/heart.png" alt="하트" />
+              <img src="img/comment.png" alt="말풍선" />
+              <img src="img/dm.png" alt="쪽지" />
+            </div>
+            <div class="feedIcon-right">
+              <img src="img/bookmark.png" alt="북마크" />
+            </div>
+          </div>
+          <div class="feed-bottom">
+            <div class="like-text">
+              <span><a>lahmjun_94</a>님 <b>여러 명</b>이 좋아합니다</span>
+            </div>
+
+            <div class="userInfo">
+              <span><a id="userId">ljtaek2</a></span>
+              <span>제주도 여행 언제가지?</span>
+              <span>더 보기</span>
+            </div>
+
+            <div class="chat-list"></div>
+
+            <div class="feed-time">
+              <span>1시간 전</span>
+            </div>
+          </div>
+          <div class="chat-write">
+            <div class="chatting">
+              <input type="text" placeholder="댓글 달기..." class="chatText" />
+              <button type="button" class="chatBtn">게시</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //main-left -->
+
+      <!-- main-right-->
+      <div class="main-right">
+        <div class="user">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/25007874_506309469752451_193908878537129984_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7rxRlThP888AX_zNjnD&oh=0f775fe01c91784c896f46107c5ff3f6&oe=5ED16CF6"
+            alt="사용자"
+          />
+          <div class="user-text">
+            <span class="user-id"><b>ljtaek2</b></span>
+            <span class="user-name">정택</span>
+          </div>
+        </div>
+        <div class="story">
+          <div class="story-header">
+            <span class="story-show">스토리</span>
+            <span class="all-show"><b>모두 보기</b></span>
+          </div>
+          <div class="story-items">
+            <!-- 스토리 항목 1-->
+            <div class="story-item1">
+              <!-- div안에 img를 넣고 부모 div한테 flex를 이용해 가운데 정렬하면 깔끔-->
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
+                alt="스토리 항목1"
+              />
+              <div class="story-info">
+                <span class="story-user">jjjun_95</span>
+                <span class="story-time">55분 전</span>
               </div>
             </div>
-            <div class="feed-picture"></div>
-            <!-- 부모에게 미리 크기를 지정하면 자식의 크기가 더 커지면 px 깨짐 주의-->
-            <div class="feed-icons">
-              <div class="feedIcon-left">
-                <img src="img/heart.png" alt="하트" />
-                <img src="img/comment.png" alt="말풍선" />
-                <img src="img/dm.png" alt="쪽지" />
-              </div>
-              <div class="feedIcon-right">
-                <img src="img/bookmark.png" alt="북마크" />
-              </div>
-            </div>
-            <div class="feed-bottom">
-              <div class="like-text">
-                <span><a>lahmjun_94</a>님 <b>여러 명</b>이 좋아합니다</span>
-              </div>
-
-              <div class="userInfo">
-                <span><a id="userId">ljtaek2</a></span>
-                <span>제주도 여행 언제가지?</span>
-                <span>더 보기</span>
-              </div>
-
-              <div class="chat-list"></div>
-
-              <div class="feed-time">
-                <span>1시간 전</span>
+            <!-- 스토리 항목 2 -->
+            <div class="story-item2">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
+                alt="스토리 항목1"
+              />
+              <div class="story-info">
+                <span class="story-user">jjjun_95</span>
+                <span class="story-time">55분 전</span>
               </div>
             </div>
-            <div class="chat-write">
-              <div class="chatting">
-                <input
-                  type="text"
-                  placeholder="댓글 달기..."
-                  class="chatText"
-                />
-                <button type="button" class="chatBtn">게시</button>
+            <!-- 스토리 항목 3 -->
+            <div class="story-item3">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
+                alt="스토리 항목1"
+              />
+              <div class="story-info">
+                <span class="story-user">jjjun_95</span>
+                <span class="story-time">55분 전</span>
+              </div>
+            </div>
+            <!-- 스토리 항목 4 -->
+            <div class="story-item4">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
+                alt="스토리 항목1"
+              />
+              <div class="story-info">
+                <span class="story-user">jjjun_95</span>
+                <span class="story-time">55분 전</span>
               </div>
             </div>
           </div>
         </div>
-        <!-- //main-left -->
-
-        <!-- main-right-->
-        <div class="main-right">
-          <div class="user">
-            <img
-              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/25007874_506309469752451_193908878537129984_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7rxRlThP888AX_zNjnD&oh=0f775fe01c91784c896f46107c5ff3f6&oe=5ED16CF6"
-              alt="사용자"
-            />
-            <div class="user-text">
-              <span class="user-id"><b>ljtaek2</b></span>
-              <span class="user-name">정택</span>
-            </div>
+        <div class="member">
+          <div class="member-header">
+            <span class="member-text">회원님을 위한 추천</span>
+            <span class="member-show">모두 보기</span>
           </div>
-          <div class="story">
-            <div class="story-header">
-              <span class="story-show">스토리</span>
-              <span class="all-show"><b>모두 보기</b></span>
+          <div class="member-items">
+            <!-- 멤버 항목 1-->
+            <div class="member-item1">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
+                alt="팔로우 1"
+              />
+              <div class="member-info">
+                <div class="member-userId">zws941029</div>
+                <div class="member-following">
+                  bagbyeonghun2650님 외 3명이 팔로우합니다
+                </div>
+              </div>
+              <div class="followBtn">
+                <span>팔로우</span>
+              </div>
             </div>
-            <div class="story-items">
-              <!-- 스토리 항목 1-->
-              <div class="story-item1">
-                <!-- div안에 img를 넣고 부모 div한테 flex를 이용해 가운데 정렬하면 깔끔-->
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
-                  alt="스토리 항목1"
-                />
-                <div class="story-info">
-                  <span class="story-user">jjjun_95</span>
-                  <span class="story-time">55분 전</span>
+            <!-- 멤버 항목 2-->
+            <div class="member-item2">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
+                alt="팔로우 2"
+              />
+              <div class="member-info">
+                <div class="member-userId">zws941029</div>
+                <div class="member-following">
+                  bagbyeonghun2650님 외 3명이 팔로우합니다
                 </div>
               </div>
-              <!-- 스토리 항목 2 -->
-              <div class="story-item2">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
-                  alt="스토리 항목1"
-                />
-                <div class="story-info">
-                  <span class="story-user">jjjun_95</span>
-                  <span class="story-time">55분 전</span>
+              <div class="followBtn">
+                <span>팔로우</span>
+              </div>
+            </div>
+            <!-- 멤버 항목 2-->
+            <div class="member-item3">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
+                alt="팔로우 3"
+              />
+              <div class="member-info">
+                <div class="member-userId">zws941029</div>
+                <div class="member-following">
+                  bagbyeonghun2650님 외 3명이 팔로우합니다
                 </div>
               </div>
-              <!-- 스토리 항목 3 -->
-              <div class="story-item3">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
-                  alt="스토리 항목1"
-                />
-                <div class="story-info">
-                  <span class="story-user">jjjun_95</span>
-                  <span class="story-time">55분 전</span>
-                </div>
-              </div>
-              <!-- 스토리 항목 4 -->
-              <div class="story-item4">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/87230044_713114806113983_690142068407795712_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qUe9Gua8x5kAX95pWes&oh=17f1775895e2727ba65bbfb7f923ea91&oe=5ED1D843"
-                  alt="스토리 항목1"
-                />
-                <div class="story-info">
-                  <span class="story-user">jjjun_95</span>
-                  <span class="story-time">55분 전</span>
-                </div>
+              <div class="followBtn">
+                <span>팔로우</span>
               </div>
             </div>
           </div>
-          <div class="member">
-            <div class="member-header">
-              <span class="member-text">회원님을 위한 추천</span>
-              <span class="member-show">모두 보기</span>
-            </div>
-            <div class="member-items">
-              <!-- 멤버 항목 1-->
-              <div class="member-item1">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
-                  alt="팔로우 1"
-                />
-                <div class="member-info">
-                  <div class="member-userId">zws941029</div>
-                  <div class="member-following">
-                    bagbyeonghun2650님 외 3명이 팔로우합니다
-                  </div>
-                </div>
-                <div class="followBtn">
-                  <span>팔로우</span>
-                </div>
-              </div>
-              <!-- 멤버 항목 2-->
-              <div class="member-item2">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
-                  alt="팔로우 2"
-                />
-                <div class="member-info">
-                  <div class="member-userId">zws941029</div>
-                  <div class="member-following">
-                    bagbyeonghun2650님 외 3명이 팔로우합니다
-                  </div>
-                </div>
-                <div class="followBtn">
-                  <span>팔로우</span>
-                </div>
-              </div>
-              <!-- 멤버 항목 2-->
-              <div class="member-item3">
-                <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80347681_449199102423938_6437971580873080832_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=C3GeJUqbLBQAX_mkblA&oh=f8cacc31289d1c80ea4aaa3e18751e5d&oe=5ED5A4D8"
-                  alt="팔로우 3"
-                />
-                <div class="member-info">
-                  <div class="member-userId">zws941029</div>
-                  <div class="member-following">
-                    bagbyeonghun2650님 외 3명이 팔로우합니다
-                  </div>
-                </div>
-                <div class="followBtn">
-                  <span>팔로우</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer>
-            <div class="footer-info">
-              <ul>
-                <li><a href="#">소개</a></li>
-                <li><a href="#">도움말</a></li>
-                <li><a href="#">홍보 센터</a></li>
-                <li><a href="#">API</a></li>
-                <li><a href="#">채용 정보</a></li>
-                <br />
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">약관</a></li>
-                <li><a href="#">위치</a></li>
-                <li><a href="#">인기 계정</a></li>
-                <li><a href="#">해시태그</a></li>
-                <br />
-                <li><a href="#">언어</a></li>
-              </ul>
-            </div>
-            <div class="footer-text">
-              <span>© 2020 INSTAGRAM FROM FACEBOOK</span>
-            </div>
-          </footer>
         </div>
-        <!-- //main-right-->
-      </main>
-    </div>
+        <footer>
+          <div class="footer-info">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">홍보 센터</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">채용 정보</a></li>
+              <br />
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">약관</a></li>
+              <li><a href="#">위치</a></li>
+              <li><a href="#">인기 계정</a></li>
+              <li><a href="#">해시태그</a></li>
+              <br />
+              <li><a href="#">언어</a></li>
+            </ul>
+          </div>
+          <div class="footer-text">
+            <span>© 2020 INSTAGRAM FROM FACEBOOK</span>
+          </div>
+        </footer>
+      </div>
+      <!-- //main-right-->
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

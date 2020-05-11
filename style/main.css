@@ -24,9 +24,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 55px;
-  z-index: 4;
   position: fixed;
+  z-index: 2;
 }
 nav .header-box {
   width: 100%;
@@ -125,6 +124,7 @@ main {
   position: relative;
   display: inline-block;
   border: 1px solid #dbdbdb;
+  margin-top: 135px;
 }
 .main-left .feed .feed-header {
   width: 614px;
@@ -247,6 +247,7 @@ main {
   flex-direction: column;
   width: 293px;
   margin-left: 30px;
+  margin-top: 135px;
 }
 .main-right .user {
   display: flex;
